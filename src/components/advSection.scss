@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&display=swap');
+
+.wrapper{
+    margin-top: auto;
+}
+.advantages {
+    display: flex;
+    gap: 1.5rem;
+}
+.adv-article{
+    padding-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    .merriweather{
+        font-family: 'Merriweather', serif;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 1.25rem;
+        margin-bottom: 2rem;
+        margin-bottom: auto;
+    }
+    .merritext{
+        color: gray;
+        padding-top: 1.75rem;
+        line-height: 2rem;
+        margin-bottom: 2rem ;
+        margin-top: auto;
+    }
+}
