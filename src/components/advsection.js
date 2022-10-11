@@ -1,6 +1,7 @@
 import { advantages } from "../data.js"
 import advArticle from "./advArticle.js"
 import "./advSection.scss"
+import facilities from "../facilities.js"
 
 console.log(advantages)
 let advSection = function() {
