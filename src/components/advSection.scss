@@ -1,29 +1,35 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&display=swap");
 
-.wrapper{
-    margin-top: auto;
-}
-.advantages {
-    display: flex;
-    gap: 1.5rem;
+$font-family_1: "Montserrat", sans-serif;
+
+$font-family_2: "Merriweather", serif;
+
+.advantages{
+  display: flex;
+  gap: 1.5rem;
 }
 .adv-article{
-    padding-top: 3rem;
-    font-family: 'Montserrat', sans-serif;
-    .merriweather{
-        font-family: 'Merriweather', serif;
-        font-family: 'Montserrat', sans-serif;
-        padding-top: 1.25rem;
-        margin-bottom: 2rem;
-        margin-bottom: auto;
-    }
-    .merritext{
-        color: gray;
-        padding-top: 1.75rem;
-        line-height: 2rem;
-        margin-bottom: 2rem ;
-        margin-top: auto;
-    }
+  font-family: $font-family_1;
+  display: flex;
+  flex-direction: column;
+  img{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 4rem;
+  }
+  .merriweather{
+    font-family: $font-family_2;
+    line-height: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  .merritext{
+    color: rgb(168, 168, 168);
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin: 0;
+    margin-top: auto;
+  }
 }
