@@ -1,19 +1,24 @@
-import { advantages } from "../data.js"
+
 import advArticle from "./advArticle.js"
 import "./advSection.scss"
-import facilities from "../facilities.js"
 
-console.log(advantages)
+//console.log(advantages)
 let advSection = function() {
 
-let element = document.createElement('div')
-element.classList.add('advantages')
+    let element = document.createElement('div')
+    element.classList.add('advantages')
 
-advantages.forEach(advantage => {
+    
+    fetch("http://localhost:4000/advantages")
+        .then(response => response.json())
+        .then(advantages => {
 
-    element.append(advArticle(advantage))
+            advantages.forEach(advantage => {
+                element.append(advArticle(advantage))
 
-})
+            })
+
+        })
 
 
 return element
